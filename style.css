@@ -1,0 +1,169 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --purple: rgb(148, 136, 255);
+  --pale-purple: rgb(191, 184, 255);
+  --white: #fff;
+}
+
+body {
+  background-color: var(--pale-purple);
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.to-do-list {
+  background-color: var(--purple);
+  display: flex;
+  justify-content: left;
+  height: 700px;
+  width: 700px;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.input-search {
+  width: 100%;
+}
+
+.icon {
+  height: 2vh;
+  display: inline;
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+}
+
+input {
+  width: 83.8%;
+  padding: 0.5em 0.8em;
+  border: 1px solid var(--purple);
+  border-radius: 5px;
+  color: var(--purple);
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  color: var(--purple);
+}
+
+button {
+  padding: 0.5em 0.8em;
+  cursor: pointer;
+  background-color: var(--white);
+  border-radius: 5px;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+button:hover {
+  background-color: var(--purple);
+  color: var(--white);
+  transition: 0.7s ease-in-out;
+}
+
+.list-item-column {
+  background-color: var(--white);
+  color: var(--purple);
+  list-style-type: none;
+  border: 3px solid var(--purple);
+  border-radius: 8px;
+  padding: 0.2em 0.5em;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul,
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
