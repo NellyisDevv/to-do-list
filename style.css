@@ -167,3 +167,7 @@ a {
   list-style-type: none;
   text-decoration: none;
 }
+
+#ul-el {
+  padding-inline: 1px;
+}
